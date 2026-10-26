@@ -1,0 +1,81 @@
+player_id,player_name,position,season,games,pass_attempts,pass_yards,pass_td,interceptions,carries,rush_yards,receptions,targets,rec_yards
+FX-QB-01,Fixture Quarterback A,QB,2016,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2016,4,120,800,4,3,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2016,15,0,0,0,0,220,950,35,45,260
+FX-RB-02,Fixture Running Back B,RB,2016,9,0,0,0,0,80,330,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2016,17,0,0,0,0,3,15,90,140,1200
+FX-WR-02,Fixture Receiver B,WR,2016,12,0,0,0,0,,,40,,500
+FX-TE-01,Fixture Tight End A,TE,2016,16,0,0,0,0,0,0,60,85,650
+FX-TE-02,Fixture Tight End B,TE,2016,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2017,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2017,5,135,890,5,4,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2017,15,0,0,0,0,225,970,35,45,261
+FX-RB-02,Fixture Running Back B,RB,2017,9,0,0,0,0,81,337,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2017,17,0,0,0,0,3,15,89,139,1190
+FX-WR-02,Fixture Receiver B,WR,2017,12,0,0,0,0,,,41,,515
+FX-TE-01,Fixture Tight End A,TE,2017,16,0,0,0,0,0,0,60,85,655
+FX-TE-02,Fixture Tight End B,TE,2017,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2018,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2018,6,150,980,6,5,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2018,15,0,0,0,0,230,990,35,45,262
+FX-RB-02,Fixture Running Back B,RB,2018,9,0,0,0,0,82,344,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2018,17,0,0,0,0,3,15,88,138,1180
+FX-WR-02,Fixture Receiver B,WR,2018,12,0,0,0,0,,,42,,530
+FX-TE-01,Fixture Tight End A,TE,2018,16,0,0,0,0,0,0,60,85,660
+FX-TE-02,Fixture Tight End B,TE,2018,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2019,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2019,7,165,1070,7,3,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2019,15,0,0,0,0,235,1010,35,45,263
+FX-RB-02,Fixture Running Back B,RB,2019,9,0,0,0,0,83,351,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2019,17,0,0,0,0,3,15,87,137,1170
+FX-WR-02,Fixture Receiver B,WR,2019,12,0,0,0,0,,,43,,545
+FX-TE-01,Fixture Tight End A,TE,2019,16,0,0,0,0,0,0,60,85,665
+FX-TE-02,Fixture Tight End B,TE,2019,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2020,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2020,8,180,1160,8,4,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2020,15,0,0,0,0,240,1030,35,45,264
+FX-RB-02,Fixture Running Back B,RB,2020,9,0,0,0,0,84,358,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2020,17,0,0,0,0,3,15,86,136,1160
+FX-WR-02,Fixture Receiver B,WR,2020,12,0,0,0,0,,,44,,560
+FX-TE-01,Fixture Tight End A,TE,2020,16,0,0,0,0,0,0,60,85,670
+FX-TE-02,Fixture Tight End B,TE,2020,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2021,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2021,9,195,1250,9,5,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2021,15,0,0,0,0,245,1050,35,45,265
+FX-RB-02,Fixture Running Back B,RB,2021,9,0,0,0,0,85,365,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2021,17,0,0,0,0,3,15,85,135,1150
+FX-WR-02,Fixture Receiver B,WR,2021,12,0,0,0,0,,,45,,575
+FX-TE-01,Fixture Tight End A,TE,2021,16,0,0,0,0,0,0,60,85,675
+FX-TE-02,Fixture Tight End B,TE,2021,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2022,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2022,10,210,1340,10,3,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2022,15,0,0,0,0,250,1070,35,45,266
+FX-RB-02,Fixture Running Back B,RB,2022,9,0,0,0,0,86,372,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2022,17,0,0,0,0,3,15,84,134,1140
+FX-WR-02,Fixture Receiver B,WR,2022,12,0,0,0,0,,,46,,590
+FX-TE-01,Fixture Tight End A,TE,2022,16,0,0,0,0,0,0,60,85,680
+FX-TE-02,Fixture Tight End B,TE,2022,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2023,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2023,11,225,1430,11,4,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2023,15,0,0,0,0,255,1090,35,45,267
+FX-RB-02,Fixture Running Back B,RB,2023,9,0,0,0,0,87,379,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2023,17,0,0,0,0,3,15,83,133,1130
+FX-WR-02,Fixture Receiver B,WR,2023,12,0,0,0,0,,,47,,605
+FX-TE-01,Fixture Tight End A,TE,2023,16,0,0,0,0,0,0,60,85,685
+FX-TE-02,Fixture Tight End B,TE,2023,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2024,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2024,12,240,1520,12,5,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2024,15,0,0,0,0,260,1110,35,45,268
+FX-RB-02,Fixture Running Back B,RB,2024,9,0,0,0,0,88,386,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2024,17,0,0,0,0,3,15,82,132,1120
+FX-WR-02,Fixture Receiver B,WR,2024,12,0,0,0,0,,,48,,620
+FX-TE-01,Fixture Tight End A,TE,2024,16,0,0,0,0,0,0,60,85,690
+FX-TE-02,Fixture Tight End B,TE,2024,6,0,0,0,0,0,0,10,14,95
+FX-QB-01,Fixture Quarterback A,QB,2025,16,400,3000,20,10,40,120,0,0,0
+FX-QB-02,Fixture Quarterback B,QB,2025,13,255,1610,13,3,10,30,0,0,0
+FX-RB-01,Fixture Running Back A,RB,2025,15,0,0,0,0,265,1130,35,45,269
+FX-RB-02,Fixture Running Back B,RB,2025,9,0,0,0,0,89,393,12,16,90
+FX-WR-01,Fixture Receiver A,WR,2025,17,0,0,0,0,3,15,81,131,1110
+FX-WR-02,Fixture Receiver B,WR,2025,12,0,0,0,0,,,49,,635
+FX-TE-01,Fixture Tight End A,TE,2025,16,0,0,0,0,0,0,60,85,695
+FX-TE-02,Fixture Tight End B,TE,2025,6,0,0,0,0,0,0,10,14,95
