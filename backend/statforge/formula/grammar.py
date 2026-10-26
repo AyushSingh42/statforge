@@ -9,7 +9,7 @@ referenced as numeric inputs.
 from dataclasses import dataclass
 from typing import Final
 
-from statforge.ingest.fields import STAT_FIELDS, STAT_FIELD_NAMES
+from statforge.ingest.fields import STAT_FIELD_NAMES, STAT_FIELDS
 
 MAX_FORMULA_LENGTH: Final[int] = 256
 MAX_AST_DEPTH: Final[int] = 20

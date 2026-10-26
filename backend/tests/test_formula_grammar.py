@@ -11,11 +11,11 @@ from statforge.formula.grammar import (
     QB_SCORE,
     formula_field_dictionary,
 )
-from statforge.ingest.fields import IDENTITY_FIELDS, STAT_FIELDS, STAT_FIELD_NAMES
+from statforge.ingest.fields import IDENTITY_FIELDS, STAT_FIELD_NAMES, STAT_FIELDS
 
 
 def test_allowed_fields_share_importer_canonical_names():
-    assert ALLOWED_FIELDS == frozenset(STAT_FIELD_NAMES)
+    assert frozenset(STAT_FIELD_NAMES) == ALLOWED_FIELDS
     assert len(ALLOWED_FIELDS) == 10
     assert not ALLOWED_FIELDS.intersection({field.name for field in IDENTITY_FIELDS})
 
@@ -37,8 +37,8 @@ def test_field_dictionary_is_json_serializable():
 
 
 def test_supported_operators_and_limits_are_explicit():
-    assert ALLOWED_BINARY_OPERATORS == {"+", "-", "*", "/"}
-    assert ALLOWED_UNARY_OPERATORS == {"+", "-"}
+    assert {"+", "-", "*", "/"} == ALLOWED_BINARY_OPERATORS
+    assert {"+", "-"} == ALLOWED_UNARY_OPERATORS
     assert 0 < MAX_FORMULA_LENGTH <= 1024
     assert 0 < MAX_AST_DEPTH <= 64
     assert 0 < MAX_ABS_CONSTANT < 10**15
