@@ -1,0 +1,58 @@
+{
+  "stage": "calculation_only",
+  "dataset_version": "fixture-1",
+  "formula": "(pass_yards + 25 * pass_td - 40 * interceptions) / pass_attempts",
+  "required_fields": [
+    "interceptions",
+    "pass_attempts",
+    "pass_td",
+    "pass_yards"
+  ],
+  "applied_filters": {
+    "seasons": [
+      2020
+    ],
+    "positions": [
+      "QB"
+    ],
+    "minimums": {
+      "games": null,
+      "pass_attempts": 200,
+      "carries": null,
+      "targets": null
+    }
+  },
+  "higher_is_better": true,
+  "counts": {
+    "selected": 2,
+    "threshold_excluded": 1,
+    "evaluated": 1,
+    "available": 1,
+    "unavailable": 0
+  },
+  "excluded_by_threshold": {
+    "pass_attempts": 1
+  },
+  "unavailable_by_reason": {},
+  "records": [
+    {
+      "player_id": "FX-QB-01",
+      "player_name": "Fixture Quarterback A",
+      "position": "QB",
+      "season": 2020,
+      "qualification_counts": {
+        "games": 16,
+        "pass_attempts": 400,
+        "carries": 40,
+        "targets": 0
+      },
+      "result": {
+        "value": 7.75,
+        "available": true,
+        "reason": null,
+        "message": null,
+        "field": null
+      }
+    }
+  ]
+}

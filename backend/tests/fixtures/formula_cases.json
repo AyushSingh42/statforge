@@ -1,0 +1,181 @@
+[
+  {
+    "name": "proposal QB score",
+    "formula": "(pass_yards + 25 * pass_td - 40 * interceptions) / pass_attempts",
+    "stats": {
+      "pass_yards": 3000,
+      "pass_td": 20,
+      "interceptions": 10,
+      "pass_attempts": 400
+    },
+    "expected": {
+      "value": 7.75,
+      "available": true,
+      "reason": null,
+      "message": null,
+      "field": null
+    }
+  },
+  {
+    "name": "different QB score",
+    "formula": "(pass_yards + 25 * pass_td - 40 * interceptions) / pass_attempts",
+    "stats": {
+      "pass_yards": 4000,
+      "pass_td": 30,
+      "interceptions": 10,
+      "pass_attempts": 500
+    },
+    "expected": {
+      "value": 8.7,
+      "available": true,
+      "reason": null,
+      "message": null,
+      "field": null
+    }
+  },
+  {
+    "name": "yards per carry",
+    "formula": "rush_yards / carries",
+    "stats": {
+      "rush_yards": 950,
+      "carries": 220
+    },
+    "expected": {
+      "value": 4.318181818181818,
+      "available": true,
+      "reason": null,
+      "message": null,
+      "field": null
+    }
+  },
+  {
+    "name": "catch percentage",
+    "formula": "100 * receptions / targets",
+    "stats": {
+      "receptions": 90,
+      "targets": 120
+    },
+    "expected": {
+      "value": 75.0,
+      "available": true,
+      "reason": null,
+      "message": null,
+      "field": null
+    }
+  },
+  {
+    "name": "scrimmage yards per game",
+    "formula": "(rush_yards + rec_yards) / games",
+    "stats": {
+      "rush_yards": 900,
+      "rec_yards": 300,
+      "games": 16
+    },
+    "expected": {
+      "value": 75.0,
+      "available": true,
+      "reason": null,
+      "message": null,
+      "field": null
+    }
+  },
+  {
+    "name": "negative value",
+    "formula": "pass_td - interceptions",
+    "stats": {
+      "pass_td": 5,
+      "interceptions": 8
+    },
+    "expected": {
+      "value": -3.0,
+      "available": true,
+      "reason": null,
+      "message": null,
+      "field": null
+    }
+  },
+  {
+    "name": "zero is available",
+    "formula": "pass_yards",
+    "stats": {
+      "pass_yards": 0
+    },
+    "expected": {
+      "value": 0.0,
+      "available": true,
+      "reason": null,
+      "message": null,
+      "field": null
+    }
+  },
+  {
+    "name": "constant ignores absent data",
+    "formula": "2.5",
+    "stats": {},
+    "expected": {
+      "value": 2.5,
+      "available": true,
+      "reason": null,
+      "message": null,
+      "field": null
+    }
+  },
+  {
+    "name": "zero attempts",
+    "formula": "(pass_yards + 25 * pass_td - 40 * interceptions) / pass_attempts",
+    "stats": {
+      "pass_yards": 3000,
+      "pass_td": 20,
+      "interceptions": 10,
+      "pass_attempts": 0
+    },
+    "expected": {
+      "value": null,
+      "available": false,
+      "reason": "division_by_zero",
+      "message": "A denominator evaluated to zero.",
+      "field": null
+    }
+  },
+  {
+    "name": "missing targets",
+    "formula": "rec_yards / targets",
+    "stats": {
+      "rec_yards": 500,
+      "targets": null
+    },
+    "expected": {
+      "value": null,
+      "available": false,
+      "reason": "missing_value",
+      "message": "No value is available for 'targets'.",
+      "field": "targets"
+    }
+  },
+  {
+    "name": "absent field",
+    "formula": "games",
+    "stats": {},
+    "expected": {
+      "value": null,
+      "available": false,
+      "reason": "missing_value",
+      "message": "No value is available for 'games'.",
+      "field": "games"
+    }
+  },
+  {
+    "name": "unnormalized input",
+    "formula": "pass_yards",
+    "stats": {
+      "pass_yards": "3000"
+    },
+    "expected": {
+      "value": null,
+      "available": false,
+      "reason": "invalid_value",
+      "message": "'pass_yards' must be a number, not a string or boolean.",
+      "field": "pass_yards"
+    }
+  }
+]

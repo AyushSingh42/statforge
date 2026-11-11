@@ -2,8 +2,8 @@
 
 This document fixes the **formula language and field vocabulary** before the UI,
 API, and calculation engine are written. Implementation lives in
-`backend/statforge/formula/grammar.py`. This is the Week 1 deliverable;
-parsing, runtime validation, and evaluation belong to later weeks.
+`backend/statforge/formula/grammar.py`. This began as the Week 1 deliverable. Part 2 now implements the restricted
+parser and row evaluator; see [the integration contract](evaluate-contract.md).
 
 ## Supported syntax
 
@@ -31,7 +31,7 @@ indexing, exponentiation, comparisons, strings, booleans, implicit multiplicatio
 unknown identifiers, and identity fields (`player_id`, `player_name`, `position`,
 `season`). An implementation must parse a restricted AST, **never call `eval`**.
 
-Proposed safety limits for Week 3 enforcement: maximum 256 characters,
+Enforced safety limits: maximum 256 characters,
 20 AST levels, and numeric constants with absolute magnitude at most 1e9.
 The parser must reject excessive nesting and non-finite constants with a
 readable error. In calculation, missing source values, division by zero, and
@@ -78,9 +78,10 @@ QB quality. Users will eventually select higher- or lower-first ranking in the U
   `formula_field_dictionary()` provides a serialization-friendly representation.
 - **Krish (frontend):** display `label`, `definition`, and `unit`; insert the `name`
   token into the editor and show `QB_SCORE` as an example.
-- **Ayush (formula engine):** in Week 3, enforce this vocabulary and grammar
-  with `ast.parse(..., mode="eval")` and an explicit AST allowlist, accepting
-  only numeric constants, names, `+ - * /`, unary `+ -`, and parentheses. Forbid
-  all other AST nodes. Week 4 adds ranking and exclusion handling.
+- **Ayush (formula engine):** Part 2 enforces this vocabulary and grammar
+  with `ast.parse(..., mode="eval")` and an explicit AST allowlist. It produces
+  an immutable arithmetic plan, then evaluates only approved instructions.
+  Row-level unavailable reasons are implemented; ranking and aggregate
+  statistical context remain separate follow-up work.
 
 Use `cd backend && pytest tests/test_formula_grammar.py` to check this contract.
