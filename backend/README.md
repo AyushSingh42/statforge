@@ -10,8 +10,25 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 pytest                      # tests + coverage (fails under 80%)
 ruff check . && ruff format --check .
-uvicorn statforge.api.main:app --reload   # GET /health
+uvicorn statforge.api.main:app --reload   # needs an imported database, see below
 ```
+
+## API
+
+All data endpoints read the SQLite snapshot (`STATFORGE_DB_PATH`) and return 503 with
+setup instructions if it hasn't been imported yet.
+
+| Endpoint | Returns |
+|---|---|
+| `GET /health` | Status, version and configured data source. |
+| `GET /fields` | The field dictionary (name, label, definition, unit) and dataset version. |
+| `GET /seasons` | Imported seasons and positions, plus source attribution and dataset version. |
+| `POST /evaluate` | Calculations for the requested seasons, positions and minimums. |
+
+`POST /evaluate` follows [Docs/evaluate-contract.md](../Docs/evaluate-contract.md): seasons and
+positions are filtered in SQL with bound parameters, minimums are inclusive and combined with
+AND, and invalid formulas return a structured 422. Records are not yet ranked
+(`"stage": "calculation_only"`).
 
 ## Data sources
 
