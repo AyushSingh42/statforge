@@ -13,3 +13,7 @@ htmlcov/
 
 # Downloaded, reproducible nflverse snapshots. The manifest is tracked.
 backend/data/nflverse/*.csv
+
+# Built by statforge.ingest.importer from a snapshot.
+backend/data/*.sqlite3
+backend/data/*.sqlite3.tmp

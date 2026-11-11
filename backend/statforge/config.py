@@ -16,3 +16,8 @@ SUPPORTED_POSITIONS: tuple[str, ...] = ("QB", "RB", "WR", "TE")
 def data_source_name() -> str:
     """Registry name of the active data source; see statforge.ingest.sources."""
     return os.environ.get("STATFORGE_DATA_SOURCE", "nflverse")
+
+
+def database_path() -> Path:
+    """SQLite snapshot written by the importer and read by the API."""
+    return Path(os.environ.get("STATFORGE_DB_PATH", DATA_DIR / "statforge.sqlite3"))

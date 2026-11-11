@@ -1,6 +1,6 @@
 # StatForge backend
 
-Data ingestion, SQLite storage (Week 2) and the FastAPI app.
+Data ingestion, SQLite storage and the FastAPI app.
 
 ## Setup
 
@@ -39,6 +39,26 @@ time, source URLs, and SHA-256 checksums so a snapshot can be audited or
 recreated. It is the default source; set `STATFORGE_DATA_SOURCE=fixture` for
 the synthetic test data. nflverse data is attributed in source metadata; check
 the relevant release metadata before a new kind of data is added.
+
+## SQLite snapshot
+
+The importer verifies a source, then writes `data/statforge.sqlite3` (override with
+`--db` or `STATFORGE_DB_PATH`). The API reads this file read-only through `statforge.db.connect`.
+
+```bash
+python -m statforge.ingest.importer                       # nflverse, 2016-2025
+python -m statforge.ingest.importer --source fixture      # synthetic data, no download
+```
+
+Tables: `player_seasons` (one row per player per season, canonical field names),
+`players`, `field_definitions` (the R1 dictionary) and `dataset_metadata` (source,
+attribution, retrieval version, import time and a content-derived `dataset_version`).
+
+- Each run rebuilds the database in a temp file and swaps it in, so re-importing never
+  adds rows and a failed import leaves the previous snapshot in place.
+- Repeated rows for a player-season (traded players) are summed. If any stint is
+  missing a stat, the season total is stored as NULL rather than a partial sum.
+- Rows outside QB/RB/WR/TE are skipped.
 
 ### Adding another source
 

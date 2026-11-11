@@ -28,6 +28,8 @@ jobs:
         run: pytest --cov-report=xml
       - name: Verify fixture data source
         run: python -m statforge.ingest.verify --source fixture
+      - name: Import fixture data source
+        run: python -m statforge.ingest.importer --source fixture --db "$RUNNER_TEMP/statforge.sqlite3"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
