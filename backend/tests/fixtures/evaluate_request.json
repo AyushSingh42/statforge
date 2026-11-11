@@ -1,0 +1,13 @@
+{
+  "formula": "(pass_yards + 25 * pass_td - 40 * interceptions) / pass_attempts",
+  "seasons": [
+    2020
+  ],
+  "positions": [
+    "QB"
+  ],
+  "minimums": {
+    "pass_attempts": 200
+  },
+  "higher_is_better": true
+}

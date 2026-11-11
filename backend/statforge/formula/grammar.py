@@ -1,7 +1,7 @@
 """Week 1 language specification for user-defined NFL statistics.
 
 This module defines the supported *language*, not an evaluator. The restricted
-AST parser and evaluator are scheduled for Week 3. The API and frontend should
+AST parser and evaluator live in parser.py and evaluator.py. The API and frontend should
 use the same field allowlist so source-specific/identity columns cannot be
 referenced as numeric inputs.
 """
@@ -18,7 +18,7 @@ MAX_ABS_CONSTANT: Final[int] = 1_000_000_000
 # Names shown to users are the names used by the importer and eventual API.
 ALLOWED_FIELDS: Final[frozenset[str]] = frozenset(STAT_FIELD_NAMES)
 
-# AST mapping to be consumed by the restricted parser in Week 3.
+# Token vocabulary; parser.py enforces the corresponding AST operations.
 ALLOWED_BINARY_OPERATORS: Final[frozenset[str]] = frozenset({"+", "-", "*", "/"})
 ALLOWED_UNARY_OPERATORS: Final[frozenset[str]] = frozenset({"+", "-"})
 
