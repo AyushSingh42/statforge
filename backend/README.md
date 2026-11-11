@@ -23,7 +23,24 @@ Every provider is wrapped in a `DataSource` (`statforge/ingest/sources/base.py`)
 
 Normalisation, type checks and coverage checks are shared, so a new source only needs those three things.
 
-### Adding the chosen source
+### nflverse snapshot
+
+`nflverse` is the initial production source. It reads a local snapshot rather
+than making live network requests during application use or verification.
+Download the supported history once (or use `--force` to refresh it):
+
+```bash
+python -m statforge.ingest.download_nflverse
+python -m statforge.ingest.verify --source nflverse
+```
+
+The CSVs are ignored by Git; `data/nflverse/manifest.json` records the retrieval
+time, source URLs, and SHA-256 checksums so a snapshot can be audited or
+recreated. It is the default source; set `STATFORGE_DATA_SOURCE=fixture` for
+the synthetic test data. nflverse data is attributed in source metadata; check
+the relevant release metadata before a new kind of data is added.
+
+### Adding another source
 
 1. Copy `statforge/ingest/sources/template.py` to `statforge/ingest/sources/<name>.py` and fill in the TODOs.
    If the provider publishes a CSV, you can register a `CsvSource` with a `column_map` instead of writing a class.

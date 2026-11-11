@@ -10,3 +10,6 @@ __pycache__/
 .coverage
 coverage.xml
 htmlcov/
+
+# Downloaded, reproducible nflverse snapshots. The manifest is tracked.
+backend/data/nflverse/*.csv

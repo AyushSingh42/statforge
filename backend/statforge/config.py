@@ -15,4 +15,4 @@ SUPPORTED_POSITIONS: tuple[str, ...] = ("QB", "RB", "WR", "TE")
 
 def data_source_name() -> str:
     """Registry name of the active data source; see statforge.ingest.sources."""
-    return os.environ.get("STATFORGE_DATA_SOURCE", "fixture")
+    return os.environ.get("STATFORGE_DATA_SOURCE", "nflverse")

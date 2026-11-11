@@ -1,7 +1,7 @@
 """Registry of data sources. Add the chosen provider to SOURCES to make it selectable.
 
 The active source is chosen with --source on the CLI or the
-STATFORGE_DATA_SOURCE environment variable (default: "fixture").
+STATFORGE_DATA_SOURCE environment variable (default: "nflverse").
 """
 
 from collections.abc import Callable
@@ -10,6 +10,7 @@ from statforge.config import DATA_DIR
 from statforge.ingest.fields import FIELD_NAMES
 from statforge.ingest.sources.base import DataSource, RawRow, SourceInfo
 from statforge.ingest.sources.csv_source import CsvSource
+from statforge.ingest.sources.nflverse import NflverseSource
 
 
 def fixture_source() -> DataSource:
@@ -28,7 +29,7 @@ def fixture_source() -> DataSource:
 
 SOURCES: dict[str, Callable[[], DataSource]] = {
     "fixture": fixture_source,
-    # "nflverse": NflverseSource,  # <- register the chosen provider here
+    "nflverse": NflverseSource,
 }
 
 

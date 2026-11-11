@@ -19,6 +19,7 @@ dev = [
 
 [project.scripts]
 statforge-verify-source = "statforge.ingest.verify:main"
+statforge-download-nflverse = "statforge.ingest.download_nflverse:main"
 
 [build-system]
 requires = ["setuptools>=68"]

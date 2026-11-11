@@ -1,0 +1,58 @@
+{
+  "files": {
+    "2016": {
+      "file": "stats_player_reg_2016.csv",
+      "sha256": "17063fa01736c41b30ffbb15a284f64611fd8a517bfae5d4cdb0ebb19da78801",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2016.csv"
+    },
+    "2017": {
+      "file": "stats_player_reg_2017.csv",
+      "sha256": "ee3ed8e1b9f7998b7b7b43ec1139e1d69186818ad3e2ce100e4467f163f1ca3c",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2017.csv"
+    },
+    "2018": {
+      "file": "stats_player_reg_2018.csv",
+      "sha256": "8d66bc2dde26951038f6cb68edfcc9082c36423ec7df8185aa7b1b61906c866b",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2018.csv"
+    },
+    "2019": {
+      "file": "stats_player_reg_2019.csv",
+      "sha256": "324b77e6027839c15bad5d32a6d83d07f998e71e0a1e682a37543efeb5219064",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2019.csv"
+    },
+    "2020": {
+      "file": "stats_player_reg_2020.csv",
+      "sha256": "ac90bb97fd0cb8f8ae7783226c50f5db64bb375e99eaedbd32e97b8b16cf1a94",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2020.csv"
+    },
+    "2021": {
+      "file": "stats_player_reg_2021.csv",
+      "sha256": "2edb2190fa41c92eed8e997c0ba1ff6c737a0fe6d996129487fe34cb63264c6f",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2021.csv"
+    },
+    "2022": {
+      "file": "stats_player_reg_2022.csv",
+      "sha256": "af2d534b208af43d4b17bcba242dc949f2d40b367253f78c882c19eee9dfc937",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2022.csv"
+    },
+    "2023": {
+      "file": "stats_player_reg_2023.csv",
+      "sha256": "0cc79526a678907817713a7f603b75c4424a1cd4dfc98daa2b3018af80312b9c",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2023.csv"
+    },
+    "2024": {
+      "file": "stats_player_reg_2024.csv",
+      "sha256": "fbad4e9f1b892e3870a51a4eea808d692cde14ed6dbacd67cce3a0def8ddcbaa",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2024.csv"
+    },
+    "2025": {
+      "file": "stats_player_reg_2025.csv",
+      "sha256": "aaa8559478dd8d58569c93e278239e70e9411e79ee649c99d8d506030cd42b12",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2025.csv"
+    }
+  },
+  "release_url": "https://github.com/nflverse/nflverse-data/releases/tag/stats_player",
+  "retrieved_at": "2026-11-11T20:57:47.353197+00:00",
+  "schema_version": 1,
+  "source": "nflverse player_stats regular-season release"
+}
